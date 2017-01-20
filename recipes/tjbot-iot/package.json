@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "fs": "0.0.2",
+    "mqtt": "~1.4.1",
+    "properties": "~1.2.1",
+    "mic": "^2.1.1",
+    "rpi-ws281x-native": "^0.8.1",
+    "pigpio": "^0.4.0",
+    "q": "^1.4.1",
+    "watson-developer-cloud": "^2.2.0"
+  },
+  "name": "tjbot-iot",
+  "version": "0.0.0",
+  "description": "IBM TJBot with IoT Foundation",
+  "main": "tjbot-iot.js",
+  "scripts": {
+    "start": "node tjbot-iot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JeongSeok, Hong"
+}

@@ -31,7 +31,7 @@ console.log("turning off the light");
 setLED(colorPalette['off']);
 
 function setLED(grb) { // green-red-blue
-	color[0] = grb ;
+	color[0] = Number(grb) ;
 	ws281x.render(color);    
 }
 

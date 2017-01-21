@@ -20,7 +20,9 @@ var mqtt = require('mqtt');
 var watson = require('watson-developer-cloud'); //to connect to Watson developer cloud
 var config = require("./config"); // to get our credentials and the attention word from the config.js files
 
-var listen = require('./features/listen');
+var listen = require('./features/listen'),
+    speak = require('./features/speak'),
+    servo = require('./features/servo');
 
 /*********************************************************************
 * Step #1: Connect to IoT Foundation
@@ -125,14 +127,17 @@ client.on('message', function(topic, message) {
   // lighting
   if (topic == 'iot-2/cmd/lighting/fmt/json') {
       console.log('lighting:'+cmd.code);
+      lighting.setLED(cmd.code);
   }
   // speak
   if (topic == 'iot-2/cmd/speak/fmt/json') {
       console.log('speak:'+cmd.text);
+      speak.speak(cmd.text);
   }
   // servo
   if (topic == 'iot-2/cmd/servo/fmt/json') {
       console.log('servo:'+cmd.duty);
+      servo.poseArm(cmd.duty); // percent
   }
 
 });

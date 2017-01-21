@@ -9,16 +9,17 @@ exports.voice = 'en-US_AllisonVoice';
 // en-US_MichaelVoice
 
 // Credentials for Watson Speech to Text service
-exports.STTUsername = 'xxx-xxx-xxx' ;
-exports.STTPassword = 'xxx-xxx-xxx' ;
+exports.STTUsername = 'cc2d5b5c-fafb-4dae-b9d3-2fa7a85f05a6' ;
+exports.STTPassword = 'bILctfrC4kHn' ;
 
 //Credentials for Watson Text to Speech service
-exports.TTSUsername = 'xxx-xxx-xxx' ;
-exports.TTSPassword = 'xxx-xxx-xxx' ; 
+exports.TTSUsername = 'c407646a-3113-4099-bd3b-86f7f6641bcb' ;
+exports.TTSPassword = 'qwrQHz3X0DYC' ; 
 
 // Device configuration
-exports.org = 'xxx-xxx-xxx';
+exports.org = '1utvx6';
 exports.deviceType = 'TJBot';
 exports.deviceId = 'tjbot-red';
 exports.authMethod = 'token';
-exports.authToken = 'xxx-xxx-xxx'
+exports.authToken = 'xxx-xxx-xxx';
+exports.authToken2 = 'tT&NV5QeJ?yGb2dG_f';

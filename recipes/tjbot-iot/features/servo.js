@@ -1,3 +1,4 @@
+var watson = require('watson-developer-cloud');
 var config = require("../config") // to get our credentials and the attention word from the config.js 
 var exec = require('child_process').exec;
 

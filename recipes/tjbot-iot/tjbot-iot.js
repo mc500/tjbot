@@ -23,6 +23,7 @@ var config = require("./config"); // to get our credentials and the attention wo
 var listen = require('./features/listen'),
     speak = require('./features/speak'),
     servo = require('./features/servo');
+    lighting = require('./features/lighting');
 
 /*********************************************************************
 * Step #1: Connect to IoT Foundation

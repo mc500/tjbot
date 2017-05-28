@@ -21,6 +21,7 @@ var watson = require('watson-developer-cloud'); //to connect to Watson developer
 var config = require("./config"); // to get our credentials and the attention word from the config.js files
 
 var listen = require('./features/listen'),
+    lighting = require('./features/lighting'),
     speak = require('./features/speak'),
     servo = require('./features/servo');
 

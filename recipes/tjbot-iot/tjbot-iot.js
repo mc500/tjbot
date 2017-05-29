@@ -24,6 +24,7 @@ var listen = require('./features/listen'),
     lighting = require('./features/lighting'),
     speak = require('./features/speak'),
     servo = require('./features/servo');
+    lighting = require('./features/lighting');
 
 /*********************************************************************
 * Step #1: Connect to IoT Foundation
